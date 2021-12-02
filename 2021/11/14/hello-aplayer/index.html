@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+    
+    <title>Hexo主题插入音乐之aplayer音乐播放器 - 只属于你的网页</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="http://mms1.baidu.com/it/u=64215643,2374159458&amp;fm=253&amp;app=138&amp;f=JPEG?w=500&amp;h=707" type="image/x-icon" />
+    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on [GitHub](http">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo主题插入音乐之aplayer音乐播放器">
+<meta property="og:url" content="http://example.com/2021/11/14/hello-aplayer/index.html">
+<meta property="og:site_name" content="只属于你的网页">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on [GitHub](http">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-11-14T15:26:20.779Z">
+<meta property="article:modified_time" content="2021-11-16T14:27:38.856Z">
+<meta property="article:author" content="fu hao hao">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
+    <link rel="stylesheet" href="/css/style.css?v=1638455552369">
+     
+    
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1638455552369">
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201907%2F12%2F20190712125801_wdoqv.jpg&amp;refer=http%3A%2F%2Fc-ssl.duitang.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1638624715&amp;t=e797c9c23eb0fd10b47c83289bef998d)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="fu hao hao" class="mdui-btn mdui-btn-icon"><img src="http://mms1.baidu.com/it/u=64215643,2374159458&amp;fm=253&amp;app=138&amp;f=JPEG?w=500&amp;h=707" alt="fu hao hao"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="fu hao hao">
+            <img src="http://mms1.baidu.com/it/u=64215643,2374159458&amp;fm=253&amp;app=138&amp;f=JPEG?w=500&amp;h=707" alt="fu hao hao" alt="fu hao hao">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>20</div>
+        <div><span>标签</span>18</div>
+        <div><span>分类</span>8</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archive.html" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/tea.html" title="请我喝茶">
+            <i class="mdui-list-item-icon nexmoefont icon-coffee"></i>
+            <div class="mdui-list-item-content">
+                请我喝茶
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/py.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="tencent://message/?uin=1207312421&Site=&menu=yes/" target="_blank" mdui-tooltip="{content: 'QQ'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/486662339" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/Nexowh" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a><a class="mdui-ripple" href="https://weibo.com/u/3511383863" target="_blank" mdui-tooltip="{content: '微博'}" style="color: rgb(225, 0, 0);background-color: rgba(250, 128, 114, .15);">
+            <i class="nexmoefont icon-weibo"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PC/" style="font-size: 10px;">PC</a> <a href="/tags/Vue/" style="font-size: 10px;">Vue</a> <a href="/tags/%E4%BB%BB%E5%A4%A9%E5%A0%82%E7%B3%BB%E5%88%97/" style="font-size: 10px;">任天堂系列</a> <a href="/tags/%E5%86%85%E5%9C%B0%E5%89%A7/" style="font-size: 10px;">内地剧</a> <a href="/tags/%E5%8A%A8%E6%BC%AB/" style="font-size: 10px;">动漫</a> <a href="/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/" style="font-size: 10px;">小游戏</a> <a href="/tags/%E5%B0%8F%E7%9B%AE%E6%A0%87/" style="font-size: 10px;">小目标</a> <a href="/tags/%E5%BE%AE%E8%BD%AFXBox%E7%B3%BB%E5%88%97/" style="font-size: 10px;">微软XBox系列</a> <a href="/tags/%E6%97%A5%E5%89%A7/" style="font-size: 10px;">日剧</a> <a href="/tags/%E6%97%A5%E6%9C%AC/" style="font-size: 10px;">日本</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E5%8A%A8%E7%94%BB/" style="font-size: 10px;">日本动画</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E6%BC%AB%E7%94%BB/" style="font-size: 10px;">日本漫画</a> <a href="/tags/%E6%BC%94%E5%94%B1%E4%BC%9A/" style="font-size: 20px;">演唱会</a> <a href="/tags/%E7%B4%A2%E5%B0%BCPs5%E7%B3%BB%E5%88%97/" style="font-size: 10px;">索尼Ps5系列</a> <a href="/tags/%E7%BE%8E%E5%89%A7/" style="font-size: 10px;">美剧</a> <a href="/tags/%E9%9F%A9%E5%89%A7/" style="font-size: 10px;">韩剧</a>
+    </div>
+    
+  </div>
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/人生这旅途/">人生这旅途</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/动漫/">动漫</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/壁纸/">壁纸</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/娱乐/">娱乐</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/游戏/">游戏</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/电视剧/">电视剧</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/编程/">编程</a>
+          <span class="category-list-count">4</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/音乐/">音乐</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2021 fu hao hao
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 62.5%;"> 
+              <img data-src="https://i.dawnlab.me/e489814b866d262813417680e613f2e6.jpg" data-sizes="auto" alt="Hexo主题插入音乐之aplayer音乐播放器" class="lazyload">
+              <h1>Hexo主题插入音乐之aplayer音乐播放器</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2021年11月14日</a>
+    <a><i class="nexmoefont icon-areachart"></i>832 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+</div>
+
+      
+
+      <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on [GitHub](<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">https://github.com/hexojs/hexo/issues</a></p>
+<blockquote>
+<p>原文首发自:<a><a target="_blank" rel="noopener" href="https://wiki.hushhw.cn/posts/a84d1ef1.html">https://wiki.hushhw.cn/posts/a84d1ef1.html</a><br></a></p>
+</blockquote>
+<p>今天折腾的点是给博客中插入音乐，找到的具体可行的方案有：</p>
+<ul>
+<li>使用音乐平台提供的插件  <sapn style="color: #FF0000;"><code>体验很差</code></li>
+<li>使用hexo-tag-aplayer插件  <sapn style="color: #FF0000;"><code>排坑后体验极佳</code></li>
+</ul>
+<h2 id="使用音乐平台提供插件"><a href="#使用音乐平台提供插件" class="headerlink" title="使用音乐平台提供插件"></a>使用音乐平台提供插件</h2><p>以网易云为例，网页端点击生成<sapn style="color: #FF0000;"><code>外链播放器</code></span>              <span style="color: #000000;">即可生成外链代码，如我的某个歌单生成</span><a target="_blank" rel="noopener" href="https://music.163.com/#/outchain/0/2205641361/">外链</a><sapn style="color: #FF0000;">。</span></p>
+<p>可以在自己博客页面中嵌入插件:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ &lt;iframe&gt;</span><br><span class="line"> frameborder=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> </span><br><span class="line"> marginwidth=<span class="string">&quot;0&quot;</span> marginheight=<span class="string">&quot;0&quot;</span> </span><br><span class="line"> width=530 height=310 </span><br><span class="line"> src=<span class="string">&quot;//music.163.com/outchain/player?type=0&amp;id=2205641361&amp;auto=0&amp;height=430&quot;</span>&gt;</span><br><span class="line">&lt;/iframe&gt;<span class="string">&quot;</span></span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<p>缺点非常明显，而最不能忍得是网易音乐有些音乐因为版权保护，没办法生成外链：</p>
+<p>[外链图片转存失败(img-nQjLxkao-1567680931243)(<a target="_blank" rel="noopener" href="https://qn.hushhw.cn/images/Snipaste_2019-01-22_22-55-46.png)]">https://qn.hushhw.cn/images/Snipaste_2019-01-22_22-55-46.png)]</a><br>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h2 id="使用-hexo-tag-aplayer-插件"><a href="#使用-hexo-tag-aplayer-插件" class="headerlink" title="使用 hexo-tag-aplayer 插件"></a>使用 hexo-tag-aplayer 插件</h2><p><a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-aplayer">hexo-tag-aplayer</a> 就是将 <a target="_blank" rel="noopener" href="https://github.com/DIYgod/APlayer">APlayer</a> 内嵌入博客页面的 Hexo 插件。</p>
+<p>安装执行:  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-tag-aplayer  </span><br></pre></td></tr></table></figure>
+<p>原先<span style="color: #FF0000;"><code>hexo-tag-aplayer</code></span>不支持 MetingJS，使得需要图片url，音乐url等等参数，操作起来都很麻烦，需要去音乐网站扒音乐播放链接或者下载下来存储在七牛云或本地，要了解具体参数和使用可以查看其<a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">中文文档</a>了解。</p>
+<h2 id="MeingJS-支持-3-0-新功能"><a href="#MeingJS-支持-3-0-新功能" class="headerlink" title="MeingJS 支持 (3.0 新功能)"></a>MeingJS 支持 (3.0 新功能)</h2><p><a target="_blank" rel="noopener" href="https://github.com/metowolf/MetingJS">MetingJS</a> 是基于<a target="_blank" rel="noopener" href="https://github.com/metowolf/Meting">Meting API</a> 的 APlayer 衍生播放器，引入 MetingJS 后，播放器将支持对于 QQ音乐、网易云音乐、虾米、酷狗、百度等平台的音乐播放。<br>如果想在本插件中使用 MetingJS，请在 Hexo 配置文件<span style="color: #FF0000;"><code>_config.yml</code></span><span style="color: #000000;">中设置：</span>  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ aplayer:</span><br><span class="line">  meting: <span class="literal">true</span>  </span><br></pre></td></tr></table></figure>
+<p>接着就可以 在文章中使用 MetingJS 播放器了，例如打开网易云音乐网站找到这首coldplay的《Viva la Vida》，从url中可以得到其id为3986040，按下面格式即可使用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &#123;% meting <span class="string">&quot;3986040&quot;</span> <span class="string">&quot;netease&quot;</span> <span class="string">&quot;song&quot;</span> <span class="string">&quot;theme:#555&quot;</span> <span class="string">&quot;mutex:true&quot;</span> <span class="string">&quot;listmaxheight:340px&quot;</span> <span class="string">&quot;preload:auto&quot;</span> %&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="再来一个歌单模板："><a href="#再来一个歌单模板：" class="headerlink" title="再来一个歌单模板："></a>再来一个歌单模板：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &#123;% meting <span class="string">&quot;627070825&quot;</span> <span class="string">&quot;netease&quot;</span> <span class="string">&quot;playlist&quot;</span> <span class="string">&quot;theme:#555&quot;</span> <span class="string">&quot;mutex:true&quot;</span> <span class="string">&quot;listmaxheight:340px&quot;</span> <span class="string">&quot;preload:auto&quot;</span> %&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="有关选项列表如下"><a href="#有关选项列表如下" class="headerlink" title="有关选项列表如下:"></a>有关选项列表如下:</h3><table>
+<thead>
+<tr>
+<th align="center">选项</th>
+<th align="center">默认值</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">id</td>
+<td align="center">必须值</td>
+<td align="center"><div style="width: 380pt">歌曲id/播放列表id/相册id/搜索关键字</div></td>
+</tr>
+<tr>
+<td align="center">server</td>
+<td align="center">必须值</td>
+<td align="center"><div style="width: 380pt">音乐平台: <span style="color: #FF0000;"><code>netease</code></span>,<span style="color: #FF0000;"><code>tencent</code></span>,<span style="color: #FF0000;"><code>kugou</code></span><span style="color: #FF0000;"><code>xiami</code></span>, <span style="color: #FF0000;"><code>baidu</code></span></div></td>
+</tr>
+<tr>
+<td align="center">type</td>
+<td align="center">必须值</td>
+<td align="center"><div style="width: 380pt">音乐平台: <span style="color: #FF0000;"><code>song</code></span>,<span style="color: #FF0000;"><code>playlist</code></span>,<span style="color: #FF0000;"><code>album</code></span><span style="color: #FF0000;"><code>search</code></span>, <span style="color: #FF0000;"><code>artist</code></span></div></td>
+</tr>
+<tr>
+<td align="center">fixed</td>
+<td align="center"><span style="color: #FF0000;"><code>false</code></span></td>
+<td align="center">开启固定模式</div></td>
+</tr>
+<tr>
+<td align="center">mini</td>
+<td align="center"><span style="color: #FF0000;"><code>false</code></span></td>
+<td align="center"><div style="width: 380pt">开启mini模式</div></td>
+</tr>
+<tr>
+<td align="center">loop</td>
+<td align="center"><span style="color: #FF0000;"><code>all</code></span></td>
+<td align="center"><div style="width: 380pt">列表循环模式：<span style="color: #FF0000;"><code>all</code></span>,<span style="color: #FF0000;"><code>one</code></span>,<span style="color: #FF0000;"><code>none</code></span></div></td>
+</tr>
+<tr>
+<td align="center">order</td>
+<td align="center"><span style="color: #FF0000;"><code>list</code></span></td>
+<td align="center"><div style="width: 380pt">列表播放模式：<span style="color: #FF0000;"><code>list(列表顺序播放)</code></span>,<span style="color: #FF0000;"><code>random(随机播放)</code></span></div></td>
+</tr>
+<tr>
+<td align="center">volume</td>
+<td align="center">0.7</td>
+<td align="center"><div style="width: 380pt">播放器音量</div></td>
+</tr>
+<tr>
+<td align="center">lrctype</td>
+<td align="center">0</td>
+<td align="center">歌词格式类型</td>
+</tr>
+<tr>
+<td align="center">listfolded</td>
+<td align="center"><span style="color: #FF0000;"><code>false</code></span></td>
+<td align="center">指定音乐播放列表是否折叠</td>
+</tr>
+<tr>
+<td align="center">storagename</td>
+<td align="center"><span style="color: #FF0000;"><code>metingjs</code></span></td>
+<td align="center">LocalStorage中存储播放器设定的键位</td>
+</tr>
+<tr>
+<td align="center">autoplay</td>
+<td align="center"><span style="color: #FF0000;"><code>true</code></span></td>
+<td align="center">自动播放,移动端浏览器暂时不支持此功能</td>
+</tr>
+<tr>
+<td align="center">mute</td>
+<td align="center"><span style="color: #FF0000;"><code>true</code></span></td>
+<td align="center">该选项开启时,如果同页面有其他aplayer播放,该播放器会暂停</td>
+</tr>
+<tr>
+<td align="center">listmaxheight</td>
+<td align="center"><span style="color: #FF0000;"><code>340px</code></span></td>
+<td align="center">播放列表的最大长度</td>
+</tr>
+<tr>
+<td align="center">preload</td>
+<td align="center"><span style="color: #FF0000;"><code>auto</code></span></td>
+<td align="center">音乐文件预载入模式,可选项:<span style="color: #FF0000;"><code>none</code></span>,<span style="color: #FF0000;"><code>metadata</code></span>,<span style="color: #FF0000;"><code>auto</code></span></td>
+</tr>
+<tr>
+<td align="center">theme</td>
+<td align="center"><span style="color: #FF0000;"><code>#ad7a86</code></span></td>
+<td align="center">播放器风格色彩设置</td>
+</tr>
+</tbody></table>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>本文作者：</strong>fu hao hao<br>
+        <strong>本文链接：</strong><a href="http://example.com/2021/11/14/hello-aplayer/" title="http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;11&#x2F;14&#x2F;hello-aplayer&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;example.com&#x2F;2021&#x2F;11&#x2F;14&#x2F;hello-aplayer&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Hexo/" rel="tag">Hexo</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <div class="valine"></div>
+<script src='https://cdn.jsdelivr.net/npm/valine'></script>
+<script>
+    // 使用方法 https://valine.js.org/quickstart.html
+    new Valine({
+        el: '.valine',
+        appId: 'jb2zm4n9y50kv9DRPHWi6hiA-gzGzoHsz',
+        appKey: 'JF8xwiU5R3vceGoF0AAGrY7T'
+    })
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                        
+                          
+                          
+                              <button class="mdui-fab catalog" style="overflow:unset;">
+                                  <i class="nexmoefont icon-i-catalog"></i>
+                                  <div class="nexmoe-toc">
+                                      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E9%9F%B3%E4%B9%90%E5%B9%B3%E5%8F%B0%E6%8F%90%E4%BE%9B%E6%8F%92%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">使用音乐平台提供插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-hexo-tag-aplayer-%E6%8F%92%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text">使用 hexo-tag-aplayer 插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MeingJS-%E6%94%AF%E6%8C%81-3-0-%E6%96%B0%E5%8A%9F%E8%83%BD"><span class="toc-number">3.</span> <span class="toc-text">MeingJS 支持 (3.0 新功能)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%8D%E6%9D%A5%E4%B8%80%E4%B8%AA%E6%AD%8C%E5%8D%95%E6%A8%A1%E6%9D%BF%EF%BC%9A"><span class="toc-number">3.1.</span> <span class="toc-text">再来一个歌单模板：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%85%B3%E9%80%89%E9%A1%B9%E5%88%97%E8%A1%A8%E5%A6%82%E4%B8%8B"><span class="toc-number">3.2.</span> <span class="toc-text">有关选项列表如下:</span></a></li></ol></li></ol>
+                                  </div>
+                              </button>
+                          
+                          
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="搜索" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1638455552375"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+    <!-- baidu Analytics -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?1638436551318';
+    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>

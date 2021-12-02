@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../vue.js"></script>
+</head>
+<body>
+<div id="box">
+    {{title | sub}}
+</div>
+<script type="text/javascript">
+    var vm=new Vue({
+        el:'#box',
+        data:{
+            title:'每天编程一小时大型IT公益活动'
+        },
+        filters:{
+            sub:function (value) {
+                if(value.length>10){
+                    return value.substr(0,9)+"...";
+                }else{
+                    return value;
+                }
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
